@@ -9,9 +9,6 @@ A comprehensive Python simulation engine that models the financial health of a b
 [![Basel III/IV](https://img.shields.io/badge/Basel-III%2FIV-green.svg)](#regulatory-framework)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
-
-## 📐 Architecture — "The Bank-in-a-Box"
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -123,7 +120,9 @@ $$
 
 where $\mathbf{M}$ is the annual transition matrix (Markov chain). Under stress:
 
-$$\mathbf{M}_{\text{stressed}} = f(\mathbf{M}, \, \text{PD\_multiplier})$$
+$$
+\mathbf{M}_{\text{stressed}} = f(\mathbf{M}, \, PD_{\text{multiplier}})
+$$
 
 Downgrade probabilities are scaled by the macro-conditioned multiplier and rows are renormalised.
 
