@@ -116,7 +116,7 @@ where $\alpha > 1$ is the panic acceleration factor. Survival horizon = day HQLA
 The cumulative default probability over $n$ years starting from rating grade $i$:
 
 $$
-	ext{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
+	text{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
 
 where $\mathbf{M}$ is the annual transition matrix (Markov chain). Under stress:
 
