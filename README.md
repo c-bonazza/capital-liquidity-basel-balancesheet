@@ -14,7 +14,7 @@ A comprehensive Python simulation engine that models the financial health of a b
 ┌──────────────────────────────────────────────────────────────────────┐
 │                    STREAMLIT EXECUTIVE DASHBOARD                      │
 │   Balance Sheet │ ALM │ Liquidity │ Credit │ OpRisk │ Stress │ RAROC │
-└───────────┬──────────────────────────────────────────────────────────┘
+        ext{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
             │
 ┌───────────▼──────────────────────────────────────────────────────────┐
 │                   MONTE CARLO STRESS ENGINE                          │
