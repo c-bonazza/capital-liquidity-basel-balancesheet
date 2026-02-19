@@ -16,7 +16,7 @@ A comprehensive Python simulation engine that models the financial health of a b
 │   Balance Sheet │ ALM │ Liquidity │ Credit │ OpRisk │ Stress │ RAROC │
         ext{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
             │
-┌───────────▼──────────────────────────────────────────────────────────┐
+    	ext{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
 │                   MONTE CARLO STRESS ENGINE                          │
 │         Correlated Macro Variables × N Paths × 3 Years               │
 └───────────┬──────────────────────────────────────────────────────────┘
@@ -117,7 +117,7 @@ The cumulative default probability over $n$ years starting from rating grade $i$
 
 $$
 	text{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
-
+	ext{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
 where $\mathbf{M}$ is the annual transition matrix (Markov chain). Under stress:
 
 $$
