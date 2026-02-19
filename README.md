@@ -111,14 +111,15 @@ where $\alpha > 1$ is the panic acceleration factor. Survival horizon = day HQLA
 | Stage | ECL Formula | Trigger |
 |:--|:--|:--|
 | Stage 1 | $\text{ECL} = \text{PD}_{12m} \times \text{LGD} \times \text{EAD}$ | No significant deterioration |
-| Stage 2 | $\text{ECL} = \text{PD}_{\text{lifetime}} \times \text{LGD} \times \text{EAD}$ | Significant increase in credit risk |
-| Stage 3 | $\text{ECL} = \text{LGD} \times \text{EAD}$ | Credit-impaired (default) |
+| Stage 2 | $\text{ECL} = \text{PD}_{\text{lifetime}} \\times \text{LGD} \\times \text{EAD}$ | Significant increase in credit risk |
+| Stage 3 | $\text{ECL} = \text{LGD} \\times \text{EAD}$ | Credit-impaired (default) |
 
 **Lifetime PD via Transition Matrices:**
 
 The cumulative default probability over $n$ years starting from rating grade $i$:
 
-$$\text{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}$$
+$$
+	ext{PD}_{\text{cum}}(i, n) = \left[\mathbf{M}^n\right]_{i, \text{Default}}
 
 where $\mathbf{M}$ is the annual transition matrix (Markov chain). Under stress:
 
@@ -257,7 +258,8 @@ from bank_simulator.risk_modules import (
 )
 from bank_simulator.optimization import run_full_optimization
 from bank_simulator.stress_testing import run_stress_test
-
+$$
+	ext{RWA} = \sum_s \text{EAD}_s \\times w_s
 # Initialize balance sheet
 bs = InitialBalanceSheet()
 
