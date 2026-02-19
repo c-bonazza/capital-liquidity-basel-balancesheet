@@ -142,17 +142,19 @@ Uses the **Loss Distribution Approach (LDA)** with a compound Poisson–Lognorma
 
 **Severity:** $X_i \sim \text{LogNormal}(\mu, \sigma)$ — individual loss amount
 
-**Aggregate Loss:** $L = \sum_{i=1}^{N} X_i$
+**Aggregate Loss:** 
+
+$$L = \sum_{i=1}^{N} X_i$$
 
 The aggregate distribution is computed via **Monte Carlo convolution** (100,000 simulations):
 
-$$\text{VaR}_{99.5\%} = F_L^{-1}(0.995)$$
+$$\text{VaR}_{99.5\\%} = F_L^{-1}(0.995)$$
 
-$$\text{ES}_{99.5\%} = \mathbb{E}[L \mid L \geq \text{VaR}_{99.5\%}]$$
+$$\text{ES}_{99.5\\%} = \mathbb{E}[L \,|\, L \geq \text{VaR}_{99.5\\%}]$$
 
 **Capital Charge (Unexpected Loss):**
 
-$$\text{UL} = \text{VaR}_{99.5\%} - \mathbb{E}[L]$$
+$$\text{UL} = \text{VaR}_{99.5\\%} - \mathbb{E}[L]$$
 
 ---
 
